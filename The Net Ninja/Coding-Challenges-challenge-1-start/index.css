@@ -1,26 +1,64 @@
 /* start styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=VT323&display=swap');
 
-body {
+* {
   margin: 0;
-  background: #444;
-  font-family: "Poppins";
+  padding: 0;
+  box-sizing: border-box;
 }
-li, ul {
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #444;
+  font-family: 'Poppins';
+  color: #ffff;
+}
+
+li,
+ul {
   list-style-type: none;
   padding: 0;
 }
+
 main {
   padding: 140px 40px 40px;
   color: #bbb;
+  font-size: 1.8rem;
 }
 
 /* solution styles */
-
-
+.title-bar {
+  padding: 3rem;
+  width: 100%;
+  height: 15rem;
+  background-color: rgb(49, 49, 49);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2rem;
+}
 
 /* open state */
+.slide-out {
+  position: absolute;
+  z-index: 10;
+  width: 20rem;
+  height: 100%;
+  background-color: rgb(32, 32, 32);
+}
 
+.list {
+  padding: 15rem 2rem 2rem 2rem;
+}
 
+.list li a {
+  display: inline-block;
+  color: #ffff;
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
 
 /* transitions */
