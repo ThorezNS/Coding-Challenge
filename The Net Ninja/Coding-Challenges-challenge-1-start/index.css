@@ -42,10 +42,15 @@ main {
 
 .slide-out {
   position: absolute;
+  left: -30rem;
   z-index: 1;
   width: 20rem;
   height: 100%;
   background-color: rgb(32, 32, 32);
+}
+
+.toggled-menu .slide-out {
+  transform: translateX(30rem);
 }
 
 .list {
@@ -80,23 +85,24 @@ main {
   margin: 0.5rem 0 0.5rem 0;
 }
 
-.toggled .top {
+.toggled-icon .top {
   transform: rotate(45deg);
   margin: 0;
 }
 
-.toggled .middle {
+.toggled-icon .middle {
   transform: scale(0);
   margin: 0;
 }
 
-.toggled .button {
+.toggled-icon .button {
   transform: rotate(-45deg);
   margin: 0;
 }
 
 .top,
 .middle,
-.button {
+.button,
+.slide-out {
   transition: all 0.2s ease-in-out;
 }
